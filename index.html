@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>大阪モルックの会</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
+<script src="js/jquery-parallax/jquery.parallax.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(function() {
+$(window).scroll(function(){
+var y = $(this).scrollTop();
+$('#molkk_bg').css('background-position', '0 ' + parseInt( -y / 20 ) + 'px');
+$('#sectionWrap02').css('background-position', '0 ' + parseInt( -y / 50 ) + 'px');
+$('#molkk_bg00').css('background-position', '0 ' + parseInt( -y / 200 ) + 'px');
+});
+});
+
+
+jQuery(function($) {
+
+var nav    = $('#fixedBox'),
+    offset = nav.offset();
+
+$(window).scroll(function () {
+  if($(window).scrollTop() > offset.top) {
+    nav.addClass('fixed');
+  } else {
+    nav.removeClass('fixed');
+  }
+});
+
+});
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
+
+<link rel="stylesheet" href="css/import.css">
+<link rel="stylesheet" href="js/bxslider/jquery.bxslider.css">
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/3.1.0/animate.css">
+</head>
+<body>
+<div id="wrapper">
+<div id="section00"><h1><img src="images/key_tit.png" width="342" height="766"></h1></div>
+<div id="fixedBox">
+<div id="navi"><img src="images/navi.png" width="1300" height="134"></div>
+</div>
+
+
+<div id="sectionWrap01" class="sectionWrap">
+    <h2><img src="images/tit_tools.gif" width="174" height="76" data-anijs="if: scroll, on: .first, do: fadeInUp animated, before: scrollReveal"></h2>
+    <ul class="section">
+        <li class="first" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal"><h3><img src="images/tools_pict01.gif" width="238" height="287"></h3><p>モルックを投げる位置を示すもの。<br />
+        地面において使用します。<br />
+        ※なくてもOK。</p></li>
+        <li data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal"><h3><img src="images/tools_pict02.gif" width="238" height="287"></h3><p>木製のピン。モルックを投げて<br />
+        スキットルを倒す。</p></li>
+        <li data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal"><h3><img src="images/tools_pict03.gif" width="238" height="287"></h3><p>投げる棒のことをモルックという。<br />
+        下手投げを行うのが基本。</p></li>
+    </ul>
+</div>
+
+
+
+<div id="secitonWrap02" class="sectionWrap">
+<h2><img src="images/tit_howto.gif" alt="Howto" width="233" height="76"></h2>
+<p>モルックを投げて、倒れたスキットルの内容によって得点をかせぎ、50点ピッタリに得点した方が勝ちとなります。</p>
+<div class="bxslider">
+	<div id="slide01" class="slideWrap">
+    	<h3><img src="images/howto_tit01.png" alt="はじめに" width="94" height="26"></h3>
+        <div class="left"><p class="exTxt">モルックを投げる地点から3～4ｍ離れたところに、<br>
+スキットルを右の図の順番に並べます。</p><p><img src="images/howto_pict01.png" width="440" height="181"></p></div>
+		<div class="right"><img src="images/howto_pict02.png" width="275" height="288"></div>
+    </div>
+    <div id="slide02" class="slideWrap">
+    	<h3><img src="images/howto_tit02.png" alt="ゲームの進め方" width="169" height="26"></h3>
+      <div class="left"><p class="exTxt">先攻、後攻を決めます。交互にモルックを投げて、スキットルを倒します。このとき複数本のスキットルが倒れた場合は、<span class="txtB">「倒れた本数＝点数」</span>となります。</p><img src="images/howto_pict04.png" alt="" width="266" height="191" class="imgCenter"></div>
+	  <div class="right"><p class="exTxt">1本しか倒れなかった場合は、「倒れたスキットルに書かれている数字＝点数」となり、先に50点先取した方の勝利となります。</p><img src="images/howto_pict05.png" alt="" width="278" height="191" class="imgCenter"></div>
+    </div>
+    <div id="slide03" class="slideWrap">
+    	<h3><img src="images/howto_tit03.png" alt="ゲームの進め方" width="145" height="26"></h3>
+      <div class="left">
+      <h4><img src="images/howto_tit04.png" width="132" height="19"></h4>
+      <p class="exTxt">50点を超えて得点した場合、<br>
+25点へ減点されます。</p><img src="images/howto_pict06.png" alt="" width="230" height="163" class="imgCenter"></div>
+      <div class="center"><h4><img src="images/howto_tit05.png" width="185" height="19"></h4>
+      <p class="exTxt">スキットルが完全に倒れていない<br>
+場合は得点をカウントしません。</p><img src="images/howto_pict07.png" alt="" width="164" height="163" class="imgCenter"></div>
+	  <div class="right">
+      <h4><img src="images/howto_tit06.png" width="185" height="19"></h4>
+      <p class="exTxt">3回連続でスキットルを倒せな<br>
+かった場合は０点となり失格です。</p><img src="images/howto_pict08.png" alt="" width="207" height="163" class="imgCenter"></div>
+    </div>
+</div>
+</div>
+<div id="molkk_bg"></div>
+
+<div id="sectionWrap03" class="sectionWrap">
+
+<h2><img src="images/tit_about.gif" alt="About" width="233" height="76"></h2>
+
+<div class="left"><img src="images/about_pict01.jpg" alt="" width="500" height="500" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal"><div class="bg"><img src="images/about_bg.png" alt="" width="500" height="399"></div></div>
+<div class="right"><img src="images/about_pict03.gif" width="500" height="189"><img src="images/about_pict02.jpg" alt="" width="500" height="500" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal"></div>
+</div>
+
+
+
+<div id="sectionWrap04" class="sectionWrap">
+<form></form>
+
+</div>
+
+
+<script src="js/anijs-master/dist/anijs-min.js"></script>
+<script src="js/anijis-master/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+</body>
+</html>
